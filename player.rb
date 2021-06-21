@@ -9,8 +9,7 @@ class Player
     puts "Score: #{score} Lives: #{lives}"
   end
   def answer(expectedAnswer)
-    puts expectedAnswer
-    puts "What will happen??"
+    print "Input your answer: "
     userAnswer = gets.chomp.to_i
     if userAnswer == expectedAnswer
       puts "CORRECT!"
