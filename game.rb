@@ -26,7 +26,7 @@ class Game
           self.assignWinner(player2)
         end
         @curr_turn = 2
-      elsif @curr_turn == 2
+      else
         self.promptPlayer(player2)
         if(player2.lives == 0)
           self.assignWinner(player1)
