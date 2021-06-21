@@ -17,7 +17,6 @@ class Game
 
   def startGame(player1, player2)
     puts "GAME START"
-    winner = nil
     #Game loop
     while player1.lives > 0 && player2.lives > 0
       if @curr_turn == 1
