@@ -1,16 +1,14 @@
 require "./game.rb"
+require "./question.rb"
 require "./player.rb"
 
 player1 = Player.new("Player 1")
 player2 = Player.new("Player 2")
 
-puts player1.name
+question = Question.new
+ans = question.generateQuestion
+player1.answer(ans)
+puts "Player 1 Lives:"
 puts player1.lives
-puts player2.name
-puts player2.lives
-
-player1.answer(15)
-puts "Player 1 Current score"
+puts "Player 1 Score:"
 puts player1.score
-puts "Player 1 Current lives"
-puts player1.lives
